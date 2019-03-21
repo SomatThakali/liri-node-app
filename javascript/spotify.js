@@ -27,7 +27,9 @@ module.exports = {
           var artists = track.album.artists;
           artists.forEach(artist => {
             console.log(
-              `Artist: ${artist.name}${"\n"}Track Name: ${track.name}`
+              `Artist: ${artist.name.bold.red}${"\n"}Track Name: ${
+                track.name.bold.red
+              }`
             );
             // console.log(track.name);
           });
