@@ -13,22 +13,7 @@ switch (userInput) {
     console.log("Concert Test");
     break;
   case "spotify-this-songs":
-    var songName = process.argv[3];
-    userInputString(songName);
-    // Artist(s)
-    // The song's name
-    // A preview link of the song from Spotify
-    // The album that the song is from
-    spotify.search(
-      { type: "track", query: userInputString(songName) },
-      function(err, data) {
-        if (err) {
-          return console.log("Error occurred: " + err);
-        }
-
-        console.log(data);
-      }
-    );
+    songSearch();
     break;
   case "movie-this":
     movieSearch();
@@ -36,6 +21,30 @@ switch (userInput) {
   case "do-what-it-says":
     console.log("Do what it says Test");
     break;
+}
+
+/**
+ * This function will search the follwing information by song's name ---
+ * Artist(s)
+ * The song's name
+ * A preview link of the song from Spotify
+ * The album that the song is from
+ * */
+
+function songSearch() {
+  var songName = process.argv[3];
+  userInputString(songName);
+  //   'https://api.spotify.com/v1/search?query=baby&type=track&offset=20&limit=20',
+  spotify.search({ type: "track", query: userInputString(songName) }, function(
+    err,
+    data
+  ) {
+    if (err) {
+      return console.log("Error occurred: " + err);
+    }
+
+    console.log(data);
+  });
 }
 
 /**
@@ -66,8 +75,6 @@ function movieSearch() {
         "\nYear: " +
         response.data.Year.red.bold +
         "\nimdb Rating: " +
-        response.data.imdbRating.red.bold +
-        "\nRotten tomatoes Rating: " +
         response.data.imdbRating.red.bold +
         "\nCountry produced : " +
         response.data.Country.red.bold +
