@@ -1,7 +1,7 @@
 require("dotenv").config();
 var colors = require("colors");
-var movie = require("./movie");
-var songs = require("./spotify");
+var movie = require("./javascript/movie");
+var songs = require("./javascript/spotify");
 
 var userInput = process.argv[2];
 
