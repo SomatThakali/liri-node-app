@@ -1,3 +1,7 @@
+var keys = require("./keys.js");
+var userInput = require("./userInput");
+var axios = require("axios");
+
 /**
  * This function will search the movie by name and will console log ---
  * Title of the movie.
@@ -11,12 +15,12 @@
 
  */
 module.exports = {
-  movie: function movieSearch() {
+  movieSearch: function movieSearch() {
     var movieName = process.argv[3];
     var moviekey = keys.movieAPI;
     var queryUrl =
       "http://www.omdbapi.com/?t=" +
-      userInputString(movieName) +
+      userInput.userInputString(movieName) +
       "&y=&plot=short&apikey=" +
       moviekey;
     axios.get(queryUrl).then(response => {
