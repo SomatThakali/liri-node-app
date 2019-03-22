@@ -50,7 +50,7 @@ function printMovieInfo(response) {
       response.data.Plot.green.bold
     }\nActors: ${
       response.data.Actors.red.bold
-    }\n---------------------------------------------------`
+    }\n-----------------------------------------------------------------------`
   );
 }
 

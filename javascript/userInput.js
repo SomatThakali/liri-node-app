@@ -4,14 +4,7 @@
  * @returns {string} user input
  */
 function userInputString(inputString) {
-  inputString = "";
-  for (var i = 3; i < process.argv.length; i++) {
-    if (i == process.argv.length - 1) {
-      inputString += process.argv[i];
-    } else {
-      inputString += process.argv[i] + "+";
-    }
-  }
+  inputString = process.argv.slice(3).join("+");
   return inputString;
 }
 

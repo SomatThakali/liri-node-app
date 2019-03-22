@@ -4,3 +4,5 @@ exports.spotify = {
 };
 
 exports.movieAPI = process.env.MOVIE_API;
+
+exports.appId = process.env.APP_ID;

@@ -18,7 +18,7 @@ module.exports = {
       .search({
         type: "track",
         query: userInput.userInputString(songName),
-        limit: 5
+        limit: 20
       })
       .then(function(response) {
         var tracks = response.tracks.items;
