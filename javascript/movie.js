@@ -42,7 +42,9 @@ function printMovieInfo(response) {
   console.log(
     `\nTitle: ${response.data.Title.red.bold}\nYear: ${
       response.data.Year.red.bold
-    }\nimdbRating: ${response.data.imdbRating.red.bold}\nCountry Produced: ${
+    }\nIMB Rating: ${
+      response.data.imdbRating.red.bold
+    }\n${printRottenTomatoesRatings(response)}\nCountry Produced: ${
       response.data.Country.red.bold
     }\nLanguage: ${response.data.Language.red.bold}\nPlot: ${
       response.data.Plot.green.bold
@@ -50,4 +52,17 @@ function printMovieInfo(response) {
       response.data.Actors.red.bold
     }\n---------------------------------------------------`
   );
+}
+
+/**
+ * If the movie does not have rotten tomatoes ratings, then the value will be N/A
+ * @param {obj} response
+ */
+function printRottenTomatoesRatings(response) {
+  var rottenTomatoesRatings = response.data.Ratings[1];
+  if (response.data.Ratings.length == 1) {
+    return "Rotten Tomatoes Rating: N/A";
+  } else {
+    return `Rotten Tomatoes Rating: ${rottenTomatoesRatings["Value"].red.bold}`;
+  }
 }
