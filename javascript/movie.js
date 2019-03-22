@@ -60,8 +60,9 @@ function printMovieInfo(response) {
  */
 function printRottenTomatoesRatings(response) {
   var rottenTomatoesRatings = response.data.Ratings[1];
+  var noRatings = "N/A";
   if (response.data.Ratings.length == 1) {
-    return "Rotten Tomatoes Rating: N/A";
+    return `Rotten Tomatoes Rating: ${noRatings.red.bold}`;
   } else {
     return `Rotten Tomatoes Rating: ${rottenTomatoesRatings["Value"].red.bold}`;
   }
