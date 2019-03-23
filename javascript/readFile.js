@@ -10,8 +10,6 @@ function doWhatItSays() {
     var dataArr = data.split(",");
     userChoice = dataArr[0];
     inputParameter = dataArr[1];
-    // console.log(dataArr);
-    // console.log(dataArr[1]);
     songs.songSearch(inputParameter);
   });
 }
