@@ -15,9 +15,7 @@ function concertSearch(bandOrArtistName) {
     .then(function(response) {
       var ConcertInfo = response.data;
       ConcertInfo.forEach(data => {
-        var eventDate = moment(response.data.datetime).format(
-          "MMM Do YYYY, h:mm a"
-        );
+        var eventDate = moment(data.datetime).format("MMM Do YYYY, h:mm a");
         console.log(
           `\nVenue Name: ${data.venue.name.bold.red}\nCity Name: ${
             data.venue.city.bold.red
