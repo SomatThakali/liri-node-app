@@ -1,5 +1,4 @@
 var keys = require("./keys.js");
-var userInput = require("./userInput");
 var axios = require("axios");
 
 /**
