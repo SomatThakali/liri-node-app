@@ -1,5 +1,4 @@
 var keys = require("./keys.js");
-var userInput = require("./userInput");
 var axios = require("axios");
 var moment = require("moment");
 
@@ -7,7 +6,7 @@ function concertSearch(bandOrArtistName) {
   var appId = keys.appId;
   var bandURL =
     "https://rest.bandsintown.com/artists/" +
-    userInput.userInputString(bandOrArtistName) +
+    bandOrArtistName +
     "/events?app_id=" +
     appId;
   axios

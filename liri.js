@@ -5,11 +5,11 @@ var songs = require("./javascript/spotify");
 var concert = require("./javascript/concert");
 var doWhat = require("./javascript/readFile");
 
-var userOption = process.argv[2];
-var inputParameter = process.argv[3];
+var userChoice = process.argv[2];
+var inputParameter = process.argv.slice(3).join("+");
 
-function main(userOption, inputParameter) {
-  switch (userOption) {
+function main(userChoice, inputParameter) {
+  switch (userChoice) {
     case "concert-this":
       concert.concertSearch(inputParameter);
       break;
@@ -27,4 +27,4 @@ function main(userOption, inputParameter) {
   }
 }
 
-main(userOption, inputParameter);
+main(userChoice, inputParameter);

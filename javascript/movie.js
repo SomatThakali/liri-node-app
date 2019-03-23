@@ -15,6 +15,7 @@ var axios = require("axios");
  */
 
 function movieSearch(movieName) {
+  console.log(movieName);
   var moviekey = keys.movieAPI;
   var queryUrl = "";
 
