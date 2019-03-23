@@ -11,9 +11,7 @@ module.exports = {
    * A preview link of the song from Spotify
    * The album that the song is from
    * */
-  songSearch: function songSearch() {
-    var songName = process.argv[3];
-
+  songSearch: function songSearch(songName) {
     spotify
       .search({
         type: "track",

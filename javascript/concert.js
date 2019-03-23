@@ -4,9 +4,8 @@ var axios = require("axios");
 var moment = require("moment");
 
 module.exports = {
-  concertSearch: function concertSearch() {
+  concertSearch: function concertSearch(bandOrArtistName) {
     var appId = keys.appId;
-    var bandOrArtistName = process.argv[3];
     var bandURL =
       "https://rest.bandsintown.com/artists/" +
       userInput.userInputString(bandOrArtistName) +

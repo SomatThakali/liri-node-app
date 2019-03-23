@@ -15,8 +15,7 @@ module.exports = {
  * Actors in the movie.
 
  */
-  movieSearch: function movieSearch() {
-    var movieName = process.argv[3];
+  movieSearch: function movieSearch(movieName) {
     var moviekey = keys.movieAPI;
     var queryUrl = "";
     if (!movieName) {
