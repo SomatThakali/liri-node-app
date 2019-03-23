@@ -2,8 +2,7 @@ var keys = require("./keys.js");
 var userInput = require("./userInput");
 var axios = require("axios");
 
-module.exports = {
-  /**
+/**
  * This function will search the movie by name and will console log ---
  * Title of the movie.
  * Year the movie came out.
@@ -15,27 +14,28 @@ module.exports = {
  * Actors in the movie.
 
  */
-  movieSearch: function movieSearch(movieName) {
-    var moviekey = keys.movieAPI;
-    var queryUrl = "";
-    if (!movieName) {
-      queryUrl =
-        "http://www.omdbapi.com/?t=Mr+Nobody&y=&plot=short&apikey=" + moviekey;
-      axios.get(queryUrl).then(response => {
-        printMovieInfo(response);
-      });
-    } else {
-      queryUrl =
-        "http://www.omdbapi.com/?t=" +
-        userInput.userInputString(movieName) +
-        "&y=&plot=short&apikey=" +
-        moviekey;
-      axios.get(queryUrl).then(response => {
-        printMovieInfo(response);
-      });
-    }
+
+function movieSearch(movieName) {
+  var moviekey = keys.movieAPI;
+  var queryUrl = "";
+
+  if (!movieName) {
+    queryUrl =
+      "http://www.omdbapi.com/?t=Mr+Nobody&y=&plot=short&apikey=" + moviekey;
+    axios.get(queryUrl).then(response => {
+      printMovieInfo(response);
+    });
+  } else {
+    queryUrl =
+      "http://www.omdbapi.com/?t=" +
+      movieName +
+      "&y=&plot=short&apikey=" +
+      moviekey;
+    axios.get(queryUrl).then(response => {
+      printMovieInfo(response);
+    });
   }
-};
+}
 
 function printMovieInfo(response) {
   console.log(
@@ -66,3 +66,5 @@ function printRottenTomatoesRatings(response) {
     return `Rotten Tomatoes Rating: ${rottenTomatoesRatings["Value"].red.bold}`;
   }
 }
+
+module.exports = { movieSearch };

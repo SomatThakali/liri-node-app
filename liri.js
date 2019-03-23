@@ -20,9 +20,11 @@ function main(userOption, inputParameter) {
       movie.movieSearch(inputParameter);
       break;
     case "do-what-it-says":
-      console.log("Do what it says");
+      //   console.log("Do what it says");
       doWhat.doWhatItSays();
       break;
+    default:
+      console.log("Your input is invalid. ");
   }
 }
 

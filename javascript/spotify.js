@@ -12,12 +12,15 @@ module.exports = {
    * The album that the song is from
    * */
   songSearch: function songSearch(songName) {
+    // console.log(songName);
+    const searchParams = {
+      type: "track",
+      query: songName,
+      limit: 20
+    };
+    // console.log("%j", searchParams);
     spotify
-      .search({
-        type: "track",
-        query: userInput.userInputString(songName),
-        limit: 20
-      })
+      .search(searchParams)
       .then(function(response) {
         var tracks = response.tracks.items;
         tracks.forEach(track => {
