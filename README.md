@@ -46,17 +46,16 @@ Example:
 
 ### 2. To search the information about the songs
 
-In your teminal/bash window run: **node liri.js spotify-this-song '<song name here>'**
-Example:
+In your teminal/bash window run: **node liri.js spotify-this-song 'song name here'**
 
-In your teminal/bash window run: node liri.js spotify-this-song 'song name here'
+Example:
 ![Screen Shot 2019-03-24 at 4 30 51 PM](https://user-images.githubusercontent.com/36021076/54885430-5a40ed00-4e52-11e9-96e1-73b502eaf282.png)
 
 ![Screen Shot 2019-03-24 at 4 31 36 PM](https://user-images.githubusercontent.com/36021076/54885438-69c03600-4e52-11e9-98a9-2cdc75634bb4.png)
 
 ### 3. To search the information about the movies
 
-In your teminal/bash window run: **node liri.js movie-this <movie name here>**
+In your teminal/bash window run: **node liri.js movie-this 'movie name here'**
 
 Example:
 ![Screen Shot 2019-03-24 at 3 57 41 PM](https://user-images.githubusercontent.com/36021076/54885323-48127f00-4e51-11e9-8083-42deaacf784b.png)
