@@ -36,4 +36,12 @@ In order to run the test, you also need to have the folowing API keys:
 
 ### 1. To search the Bands/ Artist in Town
 
-In your teminal/bash window type: node liri.js concert-this <artist/band name here>
+In your teminal/bash window run: node liri.js concert-this <artist/band name here>
+
+### 2. To search the information about the songs
+
+In your teminal/bash window run: node liri.js spotify-this-song <song name here>
+
+### 3. To search the information about the movies
+
+In your teminal/bash window run: node liri.js movie-this <movie name here>
