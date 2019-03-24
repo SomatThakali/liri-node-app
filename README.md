@@ -38,9 +38,15 @@ In order to run the test, you also need to have the folowing API keys:
 
 In your teminal/bash window run: node liri.js concert-this <artist/band name here>
 
-[logo]:
+Example:
+
+![Screen Shot 2019-03-24 at 4 34 17 PM](https://user-images.githubusercontent.com/36021076/54885495-0256b600-4e53-11e9-89d8-52f0809c1119.png)
+
+![Screen Shot 2019-03-24 at 4 36 26 PM](https://user-images.githubusercontent.com/36021076/54885504-1f8b8480-4e53-11e9-97cf-5df4daa2d066.png)
 
 ### 2. To search the information about the songs
+
+Example:
 
 In your teminal/bash window run: node liri.js spotify-this-song 'song name here'
 ![Screen Shot 2019-03-24 at 4 30 51 PM](https://user-images.githubusercontent.com/36021076/54885430-5a40ed00-4e52-11e9-96e1-73b502eaf282.png)
