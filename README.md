@@ -8,7 +8,7 @@ Clone a copy of the liri-node-app repo by running:
 
 git@github.com:SomatThakali/liri-node-app.git
 
-##Running the Tests
+## Running the Tests
 
 Make sure you have the necessary dependencies:
 
