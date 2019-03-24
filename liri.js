@@ -23,7 +23,7 @@ function main(userChoice, inputParameter) {
       doWhat.doWhatItSays();
       break;
     default:
-      console.log("Your input is invalid. ");
+      console.log("Your choice is invalid. ");
   }
 }
 
