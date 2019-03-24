@@ -59,3 +59,10 @@ In your teminal/bash window run: node liri.js movie-this 'movie name here'
 
 Example:
 ![Screen Shot 2019-03-24 at 3 57 41 PM](https://user-images.githubusercontent.com/36021076/54885323-48127f00-4e51-11e9-8083-42deaacf784b.png)
+
+### 4. To search the information about the songs, inside of random.txt
+
+In your teminal/bash window run: **node liri.js node liri.js do-what-it-says**
+
+Example:
+![Screen Shot 2019-03-24 at 4 46 15 PM](https://user-images.githubusercontent.com/36021076/54885603-5f06a080-4e54-11e9-9108-6637a6e92c19.png)

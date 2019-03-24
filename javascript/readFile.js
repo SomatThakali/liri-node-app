@@ -6,7 +6,7 @@ function doWhatItSays() {
     if (err) {
       return console.log(err);
     }
-    console.log("Data ", data);
+
     var dataArr = data.split(",");
     userChoice = dataArr[0];
     inputParameter = dataArr[1];
