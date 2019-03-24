@@ -33,3 +33,7 @@ In order to run the test, you also need to have the folowing API keys:
 3. [Spotify API](https://developer.spotify.com/documentation/web-api/)
 
 ## Running the Tests
+
+### 1. To search the Bands/ Artist in Town
+
+In your teminal/bash window type: node liri.js concert-this <artist/band name here>
