@@ -36,7 +36,7 @@ In order to run the test, you also need to have the folowing API keys:
 
 ### 1. To search the Bands/ Artist in Town
 
-In your teminal/bash window run: node liri.js concert-this <artist/band name here>
+In your teminal/bash window run: **node liri.js concert-this <artist/band name here>**
 
 Example:
 
@@ -46,6 +46,7 @@ Example:
 
 ### 2. To search the information about the songs
 
+In your teminal/bash window run: **node liri.js spotify-this-song '<song name here>'**
 Example:
 
 In your teminal/bash window run: node liri.js spotify-this-song 'song name here'
@@ -55,14 +56,14 @@ In your teminal/bash window run: node liri.js spotify-this-song 'song name here'
 
 ### 3. To search the information about the movies
 
-In your teminal/bash window run: node liri.js movie-this 'movie name here'
+In your teminal/bash window run: **node liri.js movie-this <movie name here>**
 
 Example:
 ![Screen Shot 2019-03-24 at 3 57 41 PM](https://user-images.githubusercontent.com/36021076/54885323-48127f00-4e51-11e9-8083-42deaacf784b.png)
 
 ### 4. To search the information about the songs, inside of random.txt
 
-In your teminal/bash window run: **node liri.js node liri.js do-what-it-says**
+In your teminal/bash window run: **node liri.js do-what-it-says**
 
 Example:
 ![Screen Shot 2019-03-24 at 4 46 15 PM](https://user-images.githubusercontent.com/36021076/54885603-5f06a080-4e54-11e9-9108-6637a6e92c19.png)
