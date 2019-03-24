@@ -51,4 +51,4 @@ In your teminal/bash window run: node liri.js spotify-this-song 'song name here'
 In your teminal/bash window run: node liri.js movie-this 'movie name here'
 
 Example:
-[logo](https://github.com/SomatThakali/liri-node-app/blob/master/images/movie.png)
+[image](https://github.com/SomatThakali/liri-node-app/blob/master/images/movie.png)
