@@ -42,13 +42,13 @@ In your teminal/bash window run: node liri.js concert-this <artist/band name her
 
 ### 2. To search the information about the songs
 
-In your teminal/bash window run: node liri.js spotify-this-song '<song name here>'
+In your teminal/bash window run: node liri.js spotify-this-song 'song name here'
 
 [logo]:
 
 ### 3. To search the information about the movies
 
-In your teminal/bash window run: node liri.js movie-this '<movie name here>'
+In your teminal/bash window run: node liri.js movie-this 'movie name here'
 
 Example:
 [logo](./images/movie.png)
