@@ -18,11 +18,7 @@ OS X users should install Homebrew. Once Homebrew is installed, run brew install
 
 Make sure you have the necessary dependencies:
 
-1. npm i axios
-2. npm i moment
-3. npm i dotenv
-4. npm i spotify
-5. npm i colors
+run: npm install
 
 ## API
 
