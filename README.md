@@ -6,9 +6,9 @@ LIRI is a Language Interpretation and Recognition Interface. LIRI will be a comm
 
 Clone a copy of the liri-node-app repo by running:
 
-git@github.com:SomatThakali/liri-node-app.git
+`git clone git@github.com:SomatThakali/liri-node-app.git`
 
-## Install
+## Installation
 
 In order to run the test, you need to have the latest Node.js/npm and git.
 
